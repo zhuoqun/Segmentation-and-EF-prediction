@@ -90,12 +90,11 @@ can skip the `echonet`, `scipy`, `skimage`, `matplotlib` and `tqdm` installs.
 
 ## Obtain the pretrained weights
 
-Both scripts load a pretrained `.pt` checkpoint. You can download both directly from the
-[Downloads](08_downloads) page of this tutorial, or get them from the original
-[EchoNet-Dynamic project page](https://echonet.github.io/dynamic/) (registration
-required). Save them into the project's **`stats/`** folder under the exact names
-below — that is the location each script's `WEIGHTS` path points at
-(`...\EchoNet-dynamic\stats\…`).
+Both scripts load a pretrained `.pt` checkpoint. Download both from the
+[EchoNet-Dynamic releases page](https://github.com/echonet/dynamic/releases)
+(also linked from the [Downloads](08_downloads) page). Save them into the
+project's **`stats/`** folder under the exact names below — that is the location
+each script's `WEIGHTS` path points at (`...\EchoNet-dynamic\stats\…`).
 
 | Script | Expected weight | Architecture |
 |--------|-----------------|--------------|

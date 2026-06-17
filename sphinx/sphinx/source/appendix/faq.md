@@ -26,9 +26,9 @@ fraction per video. They use different models and different weight files
 
 ## Where do I get the weight files?
 
-Download both from the [Downloads](../chapters/08_downloads) page of this
-tutorial, or get them from the EchoNet-Dynamic project:
-<https://echonet.github.io/dynamic/>.
+Download both from the
+[EchoNet-Dynamic releases page](https://github.com/echonet/dynamic/releases)
+(also linked from the [Downloads](../chapters/08_downloads) page).
 
 ## Why are predictions on my data poor?
 
