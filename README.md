@@ -12,8 +12,7 @@ deep-learning models. The tutorial walks through three ready-to-run scripts.
 EchoNet-dynamic/
 ├── scripts/        PredictSegmentation.py · PredictEF.py · CalculateStats.py
 ├── stats/          model weights (not in git — see below)
-├── demo/           a sample echo video and .npy frames
-└── FileList.csv    per-video ground-truth EF (for validation)
+└── demo/           a sample echo video and .npy frames
 sphinx/sphinx/       the Sphinx tutorial source (source/ + Makefile)
 ```
 
