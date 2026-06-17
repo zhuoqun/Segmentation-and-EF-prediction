@@ -17,15 +17,17 @@ EchoNet-dynamic/
 sphinx/sphinx/       the Sphinx tutorial source (source/ + Makefile)
 ```
 
-## Model weights & large labels (not committed)
+## Model weights & dataset labels (not committed)
 
-The pretrained `.pt` weights (>100 MB each) and `VolumeTracings.csv` (~30 MB) are
-**not** stored in this repo. Get them from EchoNet-Dynamic:
+The pretrained `.pt` weights (>100 MB each) and the dataset label CSVs are **not**
+stored in this repo:
 
-- **Weights** → <https://echonet.github.io/dynamic/> — save them as
-  `EchoNet-dynamic/stats/r2plus1d_18_32_2_pretrained.pt` and `EchoNet-dynamic/stats/deeplabv3_resnet50_random.pt`.
-- **`VolumeTracings.csv`** → from the EchoNet-Dynamic dataset (only needed for the
-  segmentation-overlap validation).
+- **Weights** → [EchoNet-Dynamic releases](https://github.com/echonet/dynamic/releases)
+  — save them as `EchoNet-dynamic/stats/r2plus1d_18_32_2_pretrained.pt` and
+  `EchoNet-dynamic/stats/deeplabv3_resnet50_random.pt` (the script `WEIGHTS` paths
+  already use these names).
+- **`FileList.csv` / `VolumeTracings.csv`** → from the
+  [EchoNet-Dynamic dataset](https://echonet.github.io/dynamic/) (used for validation).
 
 ## Build the tutorial locally
 
