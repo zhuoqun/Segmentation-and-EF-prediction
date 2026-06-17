@@ -63,10 +63,3 @@ only runs on videos with more than 10 frames.
 No. It is a fixed-threshold heuristic — Low (< 50 %), Normal (50–70 %), High
 (> 70 %) — for screening only. Clinical interpretation must be done by a qualified
 professional.
-
-## How do I rebuild this documentation?
-
-From the `sphinx` folder run `make.bat html` (Windows) or `make html`
-(Linux/macOS); the site is written to `build/html/index.html`. If
-`sphinx-build` is not found, point `SPHINXBUILD` at the executable inside your
-conda environment.
