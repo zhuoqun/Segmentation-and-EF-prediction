@@ -23,7 +23,7 @@ The pretrained `.pt` weights (>100 MB each) and `VolumeTracings.csv` (~30 MB) ar
 **not** stored in this repo. Get them from EchoNet-Dynamic:
 
 - **Weights** → <https://echonet.github.io/dynamic/> — save them as
-  `EchoNet-dynamic/stats/predictEF.pt` and `EchoNet-dynamic/stats/predictsegmentation.pt`.
+  `EchoNet-dynamic/stats/r2plus1d_18_32_2_pretrained.pt` and `EchoNet-dynamic/stats/deeplabv3_resnet50_random.pt`.
 - **`VolumeTracings.csv`** → from the EchoNet-Dynamic dataset (only needed for the
   segmentation-overlap validation).
 

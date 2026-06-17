@@ -2,8 +2,9 @@
 *.pt
 *.pth
 
-# --- Large dataset label file (~30 MB) — get it from the EchoNet-Dynamic dataset ---
+# --- Dataset label files — get them from the EchoNet-Dynamic dataset ---
 VolumeTracings.csv
+FileList.csv
 
 # --- Sphinx build output (the live site is built by GitHub Actions) ---
 sphinx/sphinx/build/

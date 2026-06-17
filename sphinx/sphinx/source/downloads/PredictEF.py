@@ -11,7 +11,7 @@ import csv
 # machine (e.g. r"D:\projects\EchoNet-dynamic\demo\video"). Keep everything from
 # "EchoNet-dynamic" onward exactly as written.
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"                       # input videos
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictEF.pt"               # model weights (.pt/.pth)
+WEIGHTS    = r"...\EchoNet-dynamic\stats\r2plus1d_18_32_2_pretrained.pt"               # model weights (.pt/.pth)
 OUTPUT_CSV = r"...\EchoNet-dynamic\demo_output\EFprediction.csv"     # output CSV
 # =====================================================
 

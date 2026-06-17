@@ -26,21 +26,22 @@ each one.
 
 Both prediction scripts load a checkpoint into `WEIGHTS`. Each file is **larger
 than 100 MB**, so it is not stored in this repository — download the two
-checkpoints from the original
-[EchoNet-Dynamic project](https://echonet.github.io/dynamic/) and save them into
-`EchoNet-dynamic/stats/` under the names below:
+checkpoints from the
+[EchoNet-Dynamic releases page](https://github.com/echonet/dynamic/releases) and
+save them into `EchoNet-dynamic/stats/`. The script `WEIGHTS` paths already use
+the exact release file names, so no renaming is needed:
 
 | File | Model | Loaded by | Source |
 |------|-------|-----------|--------|
-| `predictEF.pt` (~239 MB) | R(2+1)D-18 (EF regression) | `PredictEF.py` | [EchoNet-Dynamic](https://echonet.github.io/dynamic/) |
-| `predictsegmentation.pt` (~303 MB) | DeepLabV3-ResNet50 (segmentation) | `PredictSegmentation.py` | [EchoNet-Dynamic](https://echonet.github.io/dynamic/) |
+| `r2plus1d_18_32_2_pretrained.pt` (~239 MB) | R(2+1)D-18 (EF regression) | `PredictEF.py` | [GitHub releases](https://github.com/echonet/dynamic/releases) |
+| `deeplabv3_resnet50_random.pt` (~303 MB) | DeepLabV3-ResNet50 (segmentation) | `PredictSegmentation.py` | [GitHub releases](https://github.com/echonet/dynamic/releases) |
 
-```{admonition} Rename to match, and don't mix them up
+```{admonition} Don't mix up the two checkpoints
 :class: warning
-Save the EF checkpoint as `predictEF.pt` and the segmentation checkpoint as
-`predictsegmentation.pt` — the scripts load them by those names. Loading the EF
-checkpoint into the segmentation script (or vice-versa) raises a `state_dict`
-size-mismatch error, because the two heads have different output shapes.
+The names already match what the scripts expect — just drop both into `stats/`.
+Loading the EF checkpoint into the segmentation script (or vice-versa) raises a
+`state_dict` size-mismatch error, because the two heads have different output
+shapes.
 ```
 
 
@@ -88,19 +89,19 @@ and the frames are two separate runs.
 
 To check the scripts quantitatively (see
 [Results & Troubleshooting](07_results_troubleshooting)), use the two
-EchoNet-Dynamic label files. `FileList.csv` is small enough to grab here;
-`VolumeTracings.csv` (~30 MB) comes from the dataset:
+EchoNet-Dynamic label files. Both ship with the
+[EchoNet-Dynamic dataset](https://echonet.github.io/dynamic/):
 
 | File | Contents |
 |------|----------|
-| {download}`FileList.csv <../downloads/FileList.csv>` | Per-video true `EF`, `ESV`, `EDV`, `Split` and frame size/rate |
+| [`FileList.csv`](https://echonet.github.io/dynamic/) | Per-video true `EF`, `ESV`, `EDV`, `Split` and frame size/rate |
 | [`VolumeTracings.csv`](https://echonet.github.io/dynamic/) (~30 MB) | LV boundary tracings (`X1,Y1,X2,Y2,Frame`) on the ED/ES frame of each video |
 
 ```{admonition} The demo video is already labelled
 :class: tip
-Both files include the bundled demo video (`0X243FDE8AE0A05B6F`, true EF
-**29.9 %**), so you can validate the demo end-to-end without the full dataset.
-`VolumeTracings.csv` is ~30 MB.
+Both label files include the bundled demo video's row (`0X243FDE8AE0A05B6F`, true
+EF **29.9 %**), so once you have them you can validate the demo without
+downloading all 10,030 videos.
 ```
 
 ---
@@ -113,7 +114,7 @@ Both files include the bundled demo video (`0X243FDE8AE0A05B6F`, true EF
    ```text
    EchoNet-dynamic/
    ├── scripts/   PredictSegmentation.py · PredictEF.py · CalculateStats.py
-   ├── stats/     predictsegmentation.pt · predictEF.pt
+   ├── stats/     deeplabv3_resnet50_random.pt · r2plus1d_18_32_2_pretrained.pt
    └── demo/      video/ · npy/
    ```
 

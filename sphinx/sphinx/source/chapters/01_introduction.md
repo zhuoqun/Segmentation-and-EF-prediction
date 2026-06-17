@@ -68,7 +68,7 @@ Echo videos / .npy frames
           └─────────────► PredictEF.py ────────────► predicted EF (%) + CSV
 ```
 
-The two scripts are independent — you can run either one on its own. They adopt different weights, named `predictsegmentation.pt` and `predictEF.pt`, respectively.
+The two scripts are independent — you can run either one on its own. They adopt different weights, named `deeplabv3_resnet50_random.pt` and `r2plus1d_18_32_2_pretrained.pt`, respectively.
 
 ---
 
@@ -81,7 +81,7 @@ example, in `PredictSegmentation.py`:
 
 ```python
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictsegmentation.pt"
+WEIGHTS    = r"...\EchoNet-dynamic\stats\deeplabv3_resnet50_random.pt"
 OUTPUT_DIR = r"...\EchoNet-dynamic\demo_output"
 ```
 
@@ -89,7 +89,7 @@ and in `PredictEF.py`:
 
 ```python
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictEF.pt"
+WEIGHTS    = r"...\EchoNet-dynamic\stats\r2plus1d_18_32_2_pretrained.pt"
 OUTPUT_CSV = r"...\EchoNet-dynamic\demo_output\EFprediction.csv"
 ```
 
@@ -98,6 +98,6 @@ OUTPUT_CSV = r"...\EchoNet-dynamic\demo_output\EFprediction.csv"
 ## What you need before starting
 
 - [ ] A Python environment with PyTorch (see [Installation](02_installation))
-- [ ] The two pretrained weight files (`predictEF.pt`, `predictsegmentation.pt`)
+- [ ] The two pretrained weight files (`r2plus1d_18_32_2_pretrained.pt`, `deeplabv3_resnet50_random.pt`)
 - [ ] A folder of echocardiogram videos (`.avi` / `.mp4`) and/or `.npy` frames
 - [ ] (Optional but recommended) an NVIDIA GPU with CUDA

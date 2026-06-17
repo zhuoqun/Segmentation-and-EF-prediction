@@ -133,7 +133,7 @@ assume EchoNet-like grayscale A4C clips — recompute them for your own dataset,
 
 ## Reproducibility checklist
 
-- [ ] Record which checkpoint (`predictEF.pt` / `predictsegmentation.pt`) produced each result.
+- [ ] Record which checkpoint (`r2plus1d_18_32_2_pretrained.pt` / `deeplabv3_resnet50_random.pt`) produced each result.
 - [ ] Keep the input folder unchanged, or copy it alongside the output.
 - [ ] Note the script version / date (the segmentation header is dated 5/5/2026).
 - [ ] Archive the output CSVs together with the annotated media.

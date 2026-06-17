@@ -105,8 +105,8 @@ If you keep this layout, the paths in the scripts will match your files as-is:
 EchoNet-dynamic/
 ├── scripts/                     # the three .py scripts
 ├── stats/                       # model weights
-│   ├── predictsegmentation.pt
-│   └── predictEF.pt
+│   ├── deeplabv3_resnet50_random.pt
+│   └── r2plus1d_18_32_2_pretrained.pt
 └── demo/                        # input data (replace with your own)
     ├── video/   *.avi / *.mp4
     └── npy/     *.npy            # only used by the segmentation script

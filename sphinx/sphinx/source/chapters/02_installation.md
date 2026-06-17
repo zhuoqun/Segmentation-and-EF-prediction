@@ -99,8 +99,8 @@ below — that is the location each script's `WEIGHTS` path points at
 
 | Script | Expected weight | Architecture |
 |--------|-----------------|--------------|
-| `PredictSegmentation.py` | `predictsegmentation.pt` | DeepLabV3-ResNet50 |
-| `PredictEF.py` | `predictEF.pt` | R(2+1)D-18 |
+| `PredictSegmentation.py` | `deeplabv3_resnet50_random.pt` | DeepLabV3-ResNet50 |
+| `PredictEF.py` | `r2plus1d_18_32_2_pretrained.pt` | R(2+1)D-18 |
 
 ```{admonition} Use the matching checkpoint
 :class: warning
@@ -124,8 +124,8 @@ EchoNet-dynamic/
 │   ├── PredictEF.py
 │   └── CalculateStats.py
 ├── stats/
-│   ├── predictsegmentation.pt
-│   └── predictEF.pt
+│   ├── deeplabv3_resnet50_random.pt
+│   └── r2plus1d_18_32_2_pretrained.pt
 └── demo/
     ├── video/   0X243FDE8AE0A05B6F.avi
     └── npy/     frame_0000.npy … (138)

@@ -9,14 +9,14 @@ Edit the configuration block near the top of `PredictSegmentation.py`:
 
 ```python
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictsegmentation.pt"
+WEIGHTS    = r"...\EchoNet-dynamic\stats\deeplabv3_resnet50_random.pt"
 OUTPUT_DIR = r"...\EchoNet-dynamic\demo_output"
 ```
 
 | Variable | Meaning |
 |----------|---------|
 | `INPUT_DIR` | Folder scanned for `.avi`/`.mp4` videos and `.npy` frames |
-| `WEIGHTS` | DeepLabV3-ResNet50 checkpoint (`stats\predictsegmentation.pt`) |
+| `WEIGHTS` | DeepLabV3-ResNet50 checkpoint (`stats\deeplabv3_resnet50_random.pt`) |
 | `OUTPUT_DIR` | Folder where all results are written (created automatically) |
 
 To run on your **own** clips, point `INPUT_DIR` at your folder. `OUTPUT_DIR` is

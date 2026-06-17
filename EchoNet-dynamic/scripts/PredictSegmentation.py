@@ -17,7 +17,7 @@ import echonet
 # machine (e.g. r"D:\projects\EchoNet-dynamic\demo\video"). Keep everything from
 # "EchoNet-dynamic" onward exactly as written.
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"                    # input videos and/or .npy frames
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictsegmentation.pt"  # model weights (.pt/.pth)
+WEIGHTS    = r"...\EchoNet-dynamic\stats\deeplabv3_resnet50_random.pt"  # model weights (.pt/.pth)
 OUTPUT_DIR = r"...\EchoNet-dynamic\demo_output"                   # main output folder
 # =====================================================
 

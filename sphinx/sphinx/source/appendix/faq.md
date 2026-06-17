@@ -22,7 +22,7 @@ sub-folders are not searched recursively.
 `PredictSegmentation.py` outlines the LV and measures its area frame by frame
 (and works on `.npy` images too). `PredictEF.py` predicts a single ejection
 fraction per video. They use different models and different weight files
-(`predictEF.pt` vs `predictsegmentation.pt`).
+(`r2plus1d_18_32_2_pretrained.pt` vs `deeplabv3_resnet50_random.pt`).
 
 ## Where do I get the weight files?
 

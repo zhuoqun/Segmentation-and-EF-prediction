@@ -9,7 +9,7 @@ Edit the configuration block at the **top of `PredictEF.py`**:
 
 ```python
 INPUT_DIR  = r"...\EchoNet-dynamic\demo\video"
-WEIGHTS    = r"...\EchoNet-dynamic\stats\predictEF.pt"
+WEIGHTS    = r"...\EchoNet-dynamic\stats\r2plus1d_18_32_2_pretrained.pt"
 OUTPUT_CSV = r"...\EchoNet-dynamic\demo_output\EFprediction.csv"
 
 MEAN = [0.128, 0.129, 0.130]
@@ -19,7 +19,7 @@ STD  = [0.196, 0.196, 0.197]
 | Variable | Meaning |
 |----------|---------|
 | `INPUT_DIR` | Folder scanned for `.avi`/`.mp4` videos |
-| `WEIGHTS` | R(2+1)D-18 checkpoint (`stats\predictEF.pt`) |
+| `WEIGHTS` | R(2+1)D-18 checkpoint (`stats\r2plus1d_18_32_2_pretrained.pt`) |
 | `OUTPUT_CSV` | Output CSV file path (its folder is created automatically) |
 | `MEAN`, `STD` | Per-channel normalisation stats (0–1 scale) |
 

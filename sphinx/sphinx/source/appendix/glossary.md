@@ -44,8 +44,8 @@ Clip
   per video are averaged into one EF value.
 
 Checkpoint (.pt)
-  A saved file of trained model weights, loaded at runtime (here `predictEF.pt`
-  and `predictsegmentation.pt`).
+  A saved file of trained model weights, loaded at runtime (here `r2plus1d_18_32_2_pretrained.pt`
+  and `deeplabv3_resnet50_random.pt`).
 
 EchoNet-Dynamic
   The Stanford project providing the models and pretrained weights both scripts

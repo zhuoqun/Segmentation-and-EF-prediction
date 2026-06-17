@@ -1,17 +1,11 @@
-Place the two pretrained weight files in THIS folder so the tutorial's
-Downloads page can serve them. They are tracked by the Sphinx {download} role.
+The pretrained weights are NOT served from this tutorial anymore.
 
-Required files (exact names used by the Downloads page):
+Download them from the EchoNet-Dynamic releases page:
 
-  predictEF.pt            <- EF model      (R(2+1)D-18)
-  predictsegmentation.pt  <- Segmentation  (DeepLabV3-ResNet50)
+  https://github.com/echonet/dynamic/releases
 
-Each file is named after the script that loads it.
+  r2plus1d_18_32_2_pretrained.pt   <- EF model      (R(2+1)D-18)
+  deeplabv3_resnet50_random.pt     <- Segmentation  (DeepLabV3-ResNet50)
 
-After dropping the two files here, rebuild the docs:
-
-  conda activate Sphinx_text
-  cd d:\sphinx\sphinx\sphinx
-  sphinx-build -b html source build/html
-
-The download links on the Downloads page will then resolve.
+Save both into  EchoNet-dynamic/stats/  . The scripts' WEIGHTS paths already use
+these exact file names, so no renaming is needed.
