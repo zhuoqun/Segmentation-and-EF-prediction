@@ -107,13 +107,6 @@ Copy the printed `MEAN` and `STD` lines into the configuration block at the top
 of **both** `PredictEF.py` and `PredictSegmentation.py`, replacing the defaults.
 The next run of either script will use your dataset's statistics.
 
-```{admonition} Keep the two scripts in sync
-:class: warning
-`PredictSegmentation.py` uses the same `MEAN`/`STD` for both its image (`.npy`)
-and video modules, and `PredictEF.py` uses them for its clips. If you recompute
-stats, update **both files** so segmentation and EF stay consistent.
-```
-
 ```{admonition} Requires pandas
 :class: note
 This script imports `pandas` to read the CSV. Install it with
